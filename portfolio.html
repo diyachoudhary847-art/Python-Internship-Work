@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Portfolio Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>📈 Stock Portfolio Tracker</h2>
+
+    <input type="text" id="stockName" placeholder="Stock Name (AAPL, TSLA)">
+    <input type="number" id="quantity" placeholder="Quantity">
+
+    <button onclick="addStock()">Add Stock</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Stock</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="portfolio"></tbody>
+    </table>
+
+    <h3 id="investment">Total Investment: ₹0</h3>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
